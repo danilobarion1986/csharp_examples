@@ -1,0 +1,12 @@
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteCronometro\TesteCronometro\bin\Debug\TesteCronometro.exe.config
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteCronometro\TesteCronometro\bin\Debug\TesteCronometro.exe
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteCronometro\TesteCronometro\bin\Debug\TesteCronometro.pdb
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteCronometro\TesteCronometro\obj\Debug\TesteCronometro.csprojResolveAssemblyReference.cache
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteCronometro\TesteCronometro\obj\Debug\TesteCronometro.exe
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteCronometro\TesteCronometro\obj\Debug\TesteCronometro.pdb
+J:\TI\C# e .NET\PROJETOS\TesteCronometro\TesteCronometro\bin\Debug\TesteCronometro.exe.config
+J:\TI\C# e .NET\PROJETOS\TesteCronometro\TesteCronometro\obj\Debug\TesteCronometro.exe
+J:\TI\C# e .NET\PROJETOS\TesteCronometro\TesteCronometro\obj\Debug\TesteCronometro.pdb
+J:\TI\C# e .NET\PROJETOS\TesteCronometro\TesteCronometro\bin\Debug\TesteCronometro.exe
+J:\TI\C# e .NET\PROJETOS\TesteCronometro\TesteCronometro\bin\Debug\TesteCronometro.pdb
+J:\TI\C# e .NET\PROJETOS\TesteCronometro\TesteCronometro\obj\Debug\TesteCronometro.csprojResolveAssemblyReference.cache

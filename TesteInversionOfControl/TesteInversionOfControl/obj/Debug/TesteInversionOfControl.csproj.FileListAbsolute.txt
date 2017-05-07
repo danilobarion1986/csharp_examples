@@ -1,0 +1,16 @@
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteInversionOfControl\TesteInversionOfControl\bin\Debug\TesteInversionOfControl.exe.config
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteInversionOfControl\TesteInversionOfControl\obj\Debug\TesteInversionOfControl.csprojResolveAssemblyReference.cache
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteInversionOfControl\TesteInversionOfControl\bin\Debug\TesteInversionOfControl.exe
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteInversionOfControl\TesteInversionOfControl\bin\Debug\TesteInversionOfControl.pdb
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteInversionOfControl\TesteInversionOfControl\bin\Debug\Ninject.dll
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteInversionOfControl\TesteInversionOfControl\bin\Debug\Ninject.xml
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteInversionOfControl\TesteInversionOfControl\obj\Debug\TesteInversionOfControl.exe
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteInversionOfControl\TesteInversionOfControl\obj\Debug\TesteInversionOfControl.pdb
+J:\TI\C# e .NET\PROJETOS\TesteInversionOfControl\TesteInversionOfControl\bin\Debug\TesteInversionOfControl.exe.config
+J:\TI\C# e .NET\PROJETOS\TesteInversionOfControl\TesteInversionOfControl\obj\Debug\TesteInversionOfControl.exe
+J:\TI\C# e .NET\PROJETOS\TesteInversionOfControl\TesteInversionOfControl\obj\Debug\TesteInversionOfControl.pdb
+J:\TI\C# e .NET\PROJETOS\TesteInversionOfControl\TesteInversionOfControl\bin\Debug\TesteInversionOfControl.exe
+J:\TI\C# e .NET\PROJETOS\TesteInversionOfControl\TesteInversionOfControl\bin\Debug\TesteInversionOfControl.pdb
+J:\TI\C# e .NET\PROJETOS\TesteInversionOfControl\TesteInversionOfControl\bin\Debug\Ninject.dll
+J:\TI\C# e .NET\PROJETOS\TesteInversionOfControl\TesteInversionOfControl\bin\Debug\Ninject.xml
+J:\TI\C# e .NET\PROJETOS\TesteInversionOfControl\TesteInversionOfControl\obj\Debug\TesteInversionOfControl.csprojResolveAssemblyReference.cache

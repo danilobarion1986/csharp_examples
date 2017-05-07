@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://schemas.sebraesp.com.br/rae/v1/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://schemas.sebraesp.com.br/rae/v1/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.sebraesp.com.br/rae/v1/Imports">
+      <xsd:import schemaLocation="http://spsvrae01:53000/Funcionario.svc?xsd=xsd0" namespace="http://schemas.sebraesp.com.br/rae/v1/" />
+      <xsd:import schemaLocation="http://spsvrae01:53000/Funcionario.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://spsvrae01:53000/Funcionario.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IFuncionario_CadastrarFuncionario_InputMessage">
+    <wsdl:part name="parameters" element="tns:CadastrarFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_CadastrarFuncionario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CadastrarFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_CadastrarFuncionario_BusinessUnauthorizedFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:BusinessUnauthorizedFault" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_CadastrarFuncionario_GenericFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GenericFault" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_CadastrarFuncionario_BusinessRuleFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:BusinessRuleFault" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_BuscarFuncionarios_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarFuncionarios" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_BuscarFuncionarios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarFuncionariosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_BuscarFuncionarios_GenericFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GenericFault" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_BuscarCargos_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarCargos" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_BuscarCargos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarCargosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_BuscarCargos_GenericFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GenericFault" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_BuscarFuncoes_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarFuncoes" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_BuscarFuncoes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarFuncoesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_BuscarFuncoes_GenericFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GenericFault" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_BuscarFuncionariosPorLocal_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarFuncionariosPorLocal" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_BuscarFuncionariosPorLocal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarFuncionariosPorLocalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_BuscarFuncionariosPorLocal_GenericFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GenericFault" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_BuscarFuncionarioProduto_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarFuncionarioProduto" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_BuscarFuncionarioProduto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarFuncionarioProdutoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_BuscarFuncionarioProduto_GenericFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GenericFault" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_CadastrarFuncionarioProduto_InputMessage">
+    <wsdl:part name="parameters" element="tns:CadastrarFuncionarioProduto" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_CadastrarFuncionarioProduto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CadastrarFuncionarioProdutoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_CadastrarFuncionarioProduto_GenericFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GenericFault" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_CadastrarFuncionarioProduto_BusinessUnauthorizedFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:BusinessUnauthorizedFault" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_CadastrarFuncionarioProduto_BusinessRuleFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:BusinessRuleFault" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_ExcluirFuncionarioProduto_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExcluirFuncionarioProduto" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_ExcluirFuncionarioProduto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExcluirFuncionarioProdutoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_ExcluirFuncionarioProduto_BusinessRuleFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:BusinessRuleFault" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_ExcluirFuncionarioProduto_GenericFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GenericFault" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_ExcluirFuncionarioProduto_BusinessUnauthorizedFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:BusinessUnauthorizedFault" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_BuscarFuncionarioServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarFuncionarioServico" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_BuscarFuncionarioServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarFuncionarioServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_BuscarFuncionarioServico_GenericFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GenericFault" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_CadastrarFuncionarioServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:CadastrarFuncionarioServico" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_CadastrarFuncionarioServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CadastrarFuncionarioServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_CadastrarFuncionarioServico_BusinessRuleFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:BusinessRuleFault" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_CadastrarFuncionarioServico_BusinessUnauthorizedFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:BusinessUnauthorizedFault" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_CadastrarFuncionarioServico_GenericFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GenericFault" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_ExcluirFuncionarioServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExcluirFuncionarioServico" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_ExcluirFuncionarioServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExcluirFuncionarioServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_ExcluirFuncionarioServico_GenericFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GenericFault" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_ExcluirFuncionarioServico_BusinessUnauthorizedFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:BusinessUnauthorizedFault" />
+  </wsdl:message>
+  <wsdl:message name="IFuncionario_ExcluirFuncionarioServico_BusinessRuleFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:BusinessRuleFault" />
+  </wsdl:message>
+  <wsdl:portType name="IFuncionario">
+    <wsdl:operation name="CadastrarFuncionario">
+      <wsdl:input wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/CadastrarFuncionario" message="tns:IFuncionario_CadastrarFuncionario_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/CadastrarFuncionarioResponse" message="tns:IFuncionario_CadastrarFuncionario_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/CadastrarFuncionarioBusinessUnauthorizedFaultFault" name="BusinessUnauthorizedFaultFault" message="tns:IFuncionario_CadastrarFuncionario_BusinessUnauthorizedFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/CadastrarFuncionarioGenericFaultFault" name="GenericFaultFault" message="tns:IFuncionario_CadastrarFuncionario_GenericFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/CadastrarFuncionarioBusinessRuleFaultFault" name="BusinessRuleFaultFault" message="tns:IFuncionario_CadastrarFuncionario_BusinessRuleFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarFuncionarios">
+      <wsdl:input wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/BuscarFuncionarios" message="tns:IFuncionario_BuscarFuncionarios_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/BuscarFuncionariosResponse" message="tns:IFuncionario_BuscarFuncionarios_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/BuscarFuncionariosGenericFaultFault" name="GenericFaultFault" message="tns:IFuncionario_BuscarFuncionarios_GenericFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarCargos">
+      <wsdl:input wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/BuscarCargos" message="tns:IFuncionario_BuscarCargos_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/BuscarCargosResponse" message="tns:IFuncionario_BuscarCargos_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/BuscarCargosGenericFaultFault" name="GenericFaultFault" message="tns:IFuncionario_BuscarCargos_GenericFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarFuncoes">
+      <wsdl:input wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/BuscarFuncoes" message="tns:IFuncionario_BuscarFuncoes_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/BuscarFuncoesResponse" message="tns:IFuncionario_BuscarFuncoes_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/BuscarFuncoesGenericFaultFault" name="GenericFaultFault" message="tns:IFuncionario_BuscarFuncoes_GenericFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarFuncionariosPorLocal">
+      <wsdl:input wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/BuscarFuncionariosPorLocal" message="tns:IFuncionario_BuscarFuncionariosPorLocal_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/BuscarFuncionariosPorLocalResponse" message="tns:IFuncionario_BuscarFuncionariosPorLocal_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/BuscarFuncionariosPorLocalGenericFaultFault" name="GenericFaultFault" message="tns:IFuncionario_BuscarFuncionariosPorLocal_GenericFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarFuncionarioProduto">
+      <wsdl:input wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/BuscarFuncionarioProduto" message="tns:IFuncionario_BuscarFuncionarioProduto_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/BuscarFuncionarioProdutoResponse" message="tns:IFuncionario_BuscarFuncionarioProduto_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/BuscarFuncionarioProdutoGenericFaultFault" name="GenericFaultFault" message="tns:IFuncionario_BuscarFuncionarioProduto_GenericFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CadastrarFuncionarioProduto">
+      <wsdl:input wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/CadastrarFuncionarioProduto" message="tns:IFuncionario_CadastrarFuncionarioProduto_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/CadastrarFuncionarioProdutoResponse" message="tns:IFuncionario_CadastrarFuncionarioProduto_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/CadastrarFuncionarioProdutoGenericFaultFault" name="GenericFaultFault" message="tns:IFuncionario_CadastrarFuncionarioProduto_GenericFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/CadastrarFuncionarioProdutoBusinessUnauthorizedFaultFault" name="BusinessUnauthorizedFaultFault" message="tns:IFuncionario_CadastrarFuncionarioProduto_BusinessUnauthorizedFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/CadastrarFuncionarioProdutoBusinessRuleFaultFault" name="BusinessRuleFaultFault" message="tns:IFuncionario_CadastrarFuncionarioProduto_BusinessRuleFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcluirFuncionarioProduto">
+      <wsdl:input wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/ExcluirFuncionarioProduto" message="tns:IFuncionario_ExcluirFuncionarioProduto_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/ExcluirFuncionarioProdutoResponse" message="tns:IFuncionario_ExcluirFuncionarioProduto_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/ExcluirFuncionarioProdutoBusinessRuleFaultFault" name="BusinessRuleFaultFault" message="tns:IFuncionario_ExcluirFuncionarioProduto_BusinessRuleFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/ExcluirFuncionarioProdutoGenericFaultFault" name="GenericFaultFault" message="tns:IFuncionario_ExcluirFuncionarioProduto_GenericFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/ExcluirFuncionarioProdutoBusinessUnauthorizedFaultFault" name="BusinessUnauthorizedFaultFault" message="tns:IFuncionario_ExcluirFuncionarioProduto_BusinessUnauthorizedFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarFuncionarioServico">
+      <wsdl:input wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/BuscarFuncionarioServico" message="tns:IFuncionario_BuscarFuncionarioServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/BuscarFuncionarioServicoResponse" message="tns:IFuncionario_BuscarFuncionarioServico_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/BuscarFuncionarioServicoGenericFaultFault" name="GenericFaultFault" message="tns:IFuncionario_BuscarFuncionarioServico_GenericFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CadastrarFuncionarioServico">
+      <wsdl:input wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/CadastrarFuncionarioServico" message="tns:IFuncionario_CadastrarFuncionarioServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/CadastrarFuncionarioServicoResponse" message="tns:IFuncionario_CadastrarFuncionarioServico_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/CadastrarFuncionarioServicoBusinessRuleFaultFault" name="BusinessRuleFaultFault" message="tns:IFuncionario_CadastrarFuncionarioServico_BusinessRuleFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/CadastrarFuncionarioServicoBusinessUnauthorizedFaultFault" name="BusinessUnauthorizedFaultFault" message="tns:IFuncionario_CadastrarFuncionarioServico_BusinessUnauthorizedFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/CadastrarFuncionarioServicoGenericFaultFault" name="GenericFaultFault" message="tns:IFuncionario_CadastrarFuncionarioServico_GenericFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcluirFuncionarioServico">
+      <wsdl:input wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/ExcluirFuncionarioServico" message="tns:IFuncionario_ExcluirFuncionarioServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/ExcluirFuncionarioServicoResponse" message="tns:IFuncionario_ExcluirFuncionarioServico_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/ExcluirFuncionarioServicoGenericFaultFault" name="GenericFaultFault" message="tns:IFuncionario_ExcluirFuncionarioServico_GenericFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/ExcluirFuncionarioServicoBusinessUnauthorizedFaultFault" name="BusinessUnauthorizedFaultFault" message="tns:IFuncionario_ExcluirFuncionarioServico_BusinessUnauthorizedFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.sebraesp.com.br/rae/v1/IFuncionario/ExcluirFuncionarioServicoBusinessRuleFaultFault" name="BusinessRuleFaultFault" message="tns:IFuncionario_ExcluirFuncionarioServico_BusinessRuleFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

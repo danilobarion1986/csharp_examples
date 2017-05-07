@@ -1,0 +1,6 @@
+J:\TI\C# e .NET\PROJETOS\CustomOperators\CustomOperators\bin\Debug\CustomOperators.exe.config
+J:\TI\C# e .NET\PROJETOS\CustomOperators\CustomOperators\bin\Debug\CustomOperators.exe
+J:\TI\C# e .NET\PROJETOS\CustomOperators\CustomOperators\bin\Debug\CustomOperators.pdb
+J:\TI\C# e .NET\PROJETOS\CustomOperators\CustomOperators\obj\Debug\CustomOperators.csprojResolveAssemblyReference.cache
+J:\TI\C# e .NET\PROJETOS\CustomOperators\CustomOperators\obj\Debug\CustomOperators.exe
+J:\TI\C# e .NET\PROJETOS\CustomOperators\CustomOperators\obj\Debug\CustomOperators.pdb

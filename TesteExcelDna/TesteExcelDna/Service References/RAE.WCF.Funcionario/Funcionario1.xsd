@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.sebraesp.com.br/rae/v1/" elementFormDefault="qualified" targetNamespace="http://schemas.sebraesp.com.br/rae/v1/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://spsvrae01:53000/Funcionario.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="CadastrarFuncionario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="listaNovos" nillable="true" type="tns:ArrayOfFuncionarioModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfFuncionarioModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FuncionarioModel" nillable="true" type="tns:FuncionarioModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFuncionarioModel" nillable="true" type="tns:ArrayOfFuncionarioModel" />
+  <xs:complexType name="FuncionarioModel">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PessoaFisicaModel">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Cargo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Chapa" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Funcao" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IdFuncionario" type="xs:int" />
+          <xs:element minOccurs="0" name="Login" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SituacaoFuncionario" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FuncionarioModel" nillable="true" type="tns:FuncionarioModel" />
+  <xs:complexType name="PessoaFisicaModel">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PessoaModel">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CPF" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DataNascimento" type="xs:dateTime" />
+          <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Deficiencias" nillable="true" type="q1:ArrayOfint" />
+          <xs:element minOccurs="0" name="DocumentoEstrangeiro" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IdDocumentoEstrangeiroTipo" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="IdEscolaridade" type="xs:int" />
+          <xs:element minOccurs="0" name="IdLocalEr" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="IdLocalPaPae" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="IdPais" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IdResponsavel" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Nome" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PessoasJuridicasVinculadas" nillable="true" type="tns:ArrayOfPessoaFisicaModel.PjVinculadaModel" />
+          <xs:element minOccurs="0" name="SemEmail" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Sexo" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PessoaFisicaModel" nillable="true" type="tns:PessoaFisicaModel" />
+  <xs:complexType name="PessoaModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Celular" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CidadeEstrangeiro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DataAtualizacao" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DataCadastro" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Endereco" nillable="true" type="tns:EnderecoModel" />
+      <xs:element minOccurs="0" name="EnderecoEstrangeiro" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IdPessoa" type="xs:int" />
+      <xs:element minOccurs="0" name="IdSituacao" type="xs:int" />
+      <xs:element minOccurs="0" name="Justificativa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TelefoneComplementar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tipo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UFEstrangeiro" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PessoaModel" nillable="true" type="tns:PessoaModel" />
+  <xs:complexType name="EnderecoModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Bairro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CEP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cidade" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Complemento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estrangeiro" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IdPais" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Logradouro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LogradouroTipo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Numero" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UF" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EnderecoModel" nillable="true" type="tns:EnderecoModel" />
+  <xs:complexType name="ArrayOfPessoaFisicaModel.PjVinculadaModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PessoaFisicaModel.PjVinculadaModel" nillable="true" type="tns:PessoaFisicaModel.PjVinculadaModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPessoaFisicaModel.PjVinculadaModel" nillable="true" type="tns:ArrayOfPessoaFisicaModel.PjVinculadaModel" />
+  <xs:complexType name="PessoaFisicaModel.PjVinculadaModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Celular" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Departamento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdPessoaJuridica" type="xs:int" />
+      <xs:element minOccurs="0" name="Telefone" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PessoaFisicaModel.PjVinculadaModel" nillable="true" type="tns:PessoaFisicaModel.PjVinculadaModel" />
+  <xs:element name="CadastrarFuncionarioResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="BusinessUnauthorizedFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GenericFault">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BusinessUnauthorizedFault" nillable="true" type="tns:BusinessUnauthorizedFault" />
+  <xs:complexType name="GenericFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Mensagem" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GenericFault" nillable="true" type="tns:GenericFault" />
+  <xs:complexType name="BusinessRuleFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GenericFault">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BusinessRuleFault" nillable="true" type="tns:BusinessRuleFault" />
+  <xs:element name="BuscarFuncionarios">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarFuncionariosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BuscarFuncionariosResult" nillable="true" type="tns:ArrayOfFuncionarioModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarCargos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="idFuncionario" nillable="true" type="q2:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarCargosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="BuscarCargosResult" nillable="true" type="q3:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarFuncoes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="idFuncionario" nillable="true" type="q4:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarFuncoesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="BuscarFuncoesResult" nillable="true" type="q5:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarFuncionariosPorLocal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="idLocal" nillable="true" type="q6:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarFuncionariosPorLocalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BuscarFuncionariosPorLocalResult" nillable="true" type="tns:ArrayOfFuncionarioModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarFuncionarioProduto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="idLocal" nillable="true" type="q7:ArrayOfint" />
+        <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="IdFuncionario" nillable="true" type="q8:ArrayOfint" />
+        <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="idProduto" nillable="true" type="q9:ArrayOfint" />
+        <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="funcao" nillable="true" type="q10:ArrayOfstring" />
+        <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="cargo" nillable="true" type="q11:ArrayOfstring" />
+        <xs:element minOccurs="0" name="pagina" type="xs:int" />
+        <xs:element minOccurs="0" name="tamanhoPagina" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarFuncionarioProdutoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BuscarFuncionarioProdutoResult" nillable="true" type="tns:PagingResultOfFuncionarioProdutoModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="PagingResultOfFuncionarioProdutoModel">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="PagingResultOf{0}" Namespace="http://schemas.sebraesp.com.br/rae/v1/" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="FuncionarioProdutoModel" Namespace="http://schemas.sebraesp.com.br/rae/v1/" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Resultado" nillable="true" type="tns:ArrayOfFuncionarioProdutoModel" />
+      <xs:element minOccurs="0" name="TotalRegistros" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PagingResultOfFuncionarioProdutoModel" nillable="true" type="tns:PagingResultOfFuncionarioProdutoModel" />
+  <xs:complexType name="ArrayOfFuncionarioProdutoModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FuncionarioProdutoModel" nillable="true" type="tns:FuncionarioProdutoModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFuncionarioProdutoModel" nillable="true" type="tns:ArrayOfFuncionarioProdutoModel" />
+  <xs:complexType name="FuncionarioProdutoModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DataAlteracao" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdFuncionario" type="xs:int" />
+      <xs:element minOccurs="0" name="IdProduto" type="xs:int" />
+      <xs:element minOccurs="0" name="SituacaoFuncionarioProduto" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FuncionarioProdutoModel" nillable="true" type="tns:FuncionarioProdutoModel" />
+  <xs:element name="CadastrarFuncionarioProduto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="model" nillable="true" type="tns:FuncionarioProdutoModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CadastrarFuncionarioProdutoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CadastrarFuncionarioProdutoResult" nillable="true" type="tns:FuncionarioProdutoModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirFuncionarioProduto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idFuncionario" type="xs:int" />
+        <xs:element minOccurs="0" name="idProduto" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirFuncionarioProdutoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExcluirFuncionarioProdutoResult" nillable="true" type="tns:FuncionarioProdutoModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarFuncionarioServico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="idLocal" nillable="true" type="q12:ArrayOfint" />
+        <xs:element xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="IdFuncionario" nillable="true" type="q13:ArrayOfint" />
+        <xs:element xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="idServico" nillable="true" type="q14:ArrayOfint" />
+        <xs:element xmlns:q15="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="funcao" nillable="true" type="q15:ArrayOfstring" />
+        <xs:element xmlns:q16="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="cargo" nillable="true" type="q16:ArrayOfstring" />
+        <xs:element minOccurs="0" name="pagina" type="xs:int" />
+        <xs:element minOccurs="0" name="tamanhoPagina" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarFuncionarioServicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BuscarFuncionarioServicoResult" nillable="true" type="tns:PagingResultOfFuncionarioServicoModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="PagingResultOfFuncionarioServicoModel">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="PagingResultOf{0}" Namespace="http://schemas.sebraesp.com.br/rae/v1/" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="FuncionarioServicoModel" Namespace="http://schemas.sebraesp.com.br/rae/v1/" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Resultado" nillable="true" type="tns:ArrayOfFuncionarioServicoModel" />
+      <xs:element minOccurs="0" name="TotalRegistros" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PagingResultOfFuncionarioServicoModel" nillable="true" type="tns:PagingResultOfFuncionarioServicoModel" />
+  <xs:complexType name="ArrayOfFuncionarioServicoModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FuncionarioServicoModel" nillable="true" type="tns:FuncionarioServicoModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFuncionarioServicoModel" nillable="true" type="tns:ArrayOfFuncionarioServicoModel" />
+  <xs:complexType name="FuncionarioServicoModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DataAlteracao" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdFuncionario" type="xs:int" />
+      <xs:element minOccurs="0" name="IdServico" type="xs:int" />
+      <xs:element minOccurs="0" name="SituacaoFuncionarioServico" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FuncionarioServicoModel" nillable="true" type="tns:FuncionarioServicoModel" />
+  <xs:element name="CadastrarFuncionarioServico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="model" nillable="true" type="tns:FuncionarioServicoModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CadastrarFuncionarioServicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CadastrarFuncionarioServicoResult" nillable="true" type="tns:FuncionarioServicoModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirFuncionarioServico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idFuncionario" type="xs:int" />
+        <xs:element minOccurs="0" name="idServico" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirFuncionarioServicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExcluirFuncionarioServicoResult" nillable="true" type="tns:FuncionarioServicoModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

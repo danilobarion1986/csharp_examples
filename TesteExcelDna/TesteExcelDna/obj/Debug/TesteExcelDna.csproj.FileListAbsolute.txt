@@ -1,0 +1,7 @@
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteExcelDna\TesteExcelDna\bin\Debug\TesteExcelDna-AddIn.dna
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteExcelDna\TesteExcelDna\bin\Debug\TesteExcelDna.dll
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteExcelDna\TesteExcelDna\bin\Debug\TesteExcelDna.pdb
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteExcelDna\TesteExcelDna\obj\Debug\TesteExcelDna.csprojResolveAssemblyReference.cache
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteExcelDna\TesteExcelDna\obj\Debug\TesteExcelDna.dll
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteExcelDna\TesteExcelDna\obj\Debug\TesteExcelDna.pdb
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteExcelDna\TesteExcelDna\bin\Debug\TesteExcelDna.dll.config

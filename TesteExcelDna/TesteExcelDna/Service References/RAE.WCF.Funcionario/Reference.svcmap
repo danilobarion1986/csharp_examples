@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d5bed042-2ae3-4abb-82f4-08a900d541b5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://spsvrae01:53000/Funcionario.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Funcionario.wsdl" MetadataType="Wsdl" ID="5ed2a61f-7a65-46f2-800e-38a47257b7b7" SourceId="1" SourceUrl="http://spsvrae01:53000/Funcionario.svc?wsdl" />
+    <MetadataFile FileName="Funcionario.xsd" MetadataType="Schema" ID="6593d757-74a9-4096-a6f6-2315750f3f2d" SourceId="1" SourceUrl="http://spsvrae01:53000/Funcionario.svc?xsd=xsd1" />
+    <MetadataFile FileName="Funcionario1.wsdl" MetadataType="Wsdl" ID="3a192f1d-22d4-4b15-aeaa-d62848b45d07" SourceId="1" SourceUrl="http://spsvrae01:53000/Funcionario.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="Funcionario1.xsd" MetadataType="Schema" ID="5c1e5bd9-e621-44ab-a324-b84b20d4172e" SourceId="1" SourceUrl="http://spsvrae01:53000/Funcionario.svc?xsd=xsd0" />
+    <MetadataFile FileName="Funcionario.disco" MetadataType="Disco" ID="14f1f1c7-c258-4598-a6fb-6e689bea84c6" SourceId="1" SourceUrl="http://spsvrae01:53000/Funcionario.svc?disco" />
+    <MetadataFile FileName="Funcionario2.xsd" MetadataType="Schema" ID="06039e78-3228-4f42-a752-d4da85935331" SourceId="1" SourceUrl="http://spsvrae01:53000/Funcionario.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

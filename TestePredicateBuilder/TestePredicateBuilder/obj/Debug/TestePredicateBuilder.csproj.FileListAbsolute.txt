@@ -1,0 +1,10 @@
+c:\users\danilobn\documents\visual studio 2013\Projects\TestePredicateBuilder\TestePredicateBuilder\bin\Debug\TestePredicateBuilder.exe.config
+c:\users\danilobn\documents\visual studio 2013\Projects\TestePredicateBuilder\TestePredicateBuilder\obj\Debug\TestePredicateBuilder.csprojResolveAssemblyReference.cache
+c:\users\danilobn\documents\visual studio 2013\Projects\TestePredicateBuilder\TestePredicateBuilder\bin\Debug\TestePredicateBuilder.exe
+c:\users\danilobn\documents\visual studio 2013\Projects\TestePredicateBuilder\TestePredicateBuilder\bin\Debug\TestePredicateBuilder.pdb
+c:\users\danilobn\documents\visual studio 2013\Projects\TestePredicateBuilder\TestePredicateBuilder\obj\Debug\TestePredicateBuilder.exe
+c:\users\danilobn\documents\visual studio 2013\Projects\TestePredicateBuilder\TestePredicateBuilder\obj\Debug\TestePredicateBuilder.pdb
+c:\users\danilobn\documents\visual studio 2013\Projects\TestePredicateBuilder\TestePredicateBuilder\bin\Debug\System.Linq.Dynamic.dll
+J:\TI\C# e .NET\PROJETOS\TestePredicateBuilder\TestePredicateBuilder\bin\Debug\TestePredicateBuilder.exe.config
+J:\TI\C# e .NET\PROJETOS\TestePredicateBuilder\TestePredicateBuilder\obj\Debug\TestePredicateBuilder.exe
+J:\TI\C# e .NET\PROJETOS\TestePredicateBuilder\TestePredicateBuilder\obj\Debug\TestePredicateBuilder.pdb

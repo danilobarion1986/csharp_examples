@@ -1,0 +1,7 @@
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteBCrypt\TesteBCrypt\bin\Debug\TesteBCrypt.exe.config
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteBCrypt\TesteBCrypt\bin\Debug\TesteBCrypt.exe
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteBCrypt\TesteBCrypt\bin\Debug\TesteBCrypt.pdb
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteBCrypt\TesteBCrypt\bin\Debug\DevOne.Security.Cryptography.BCrypt.dll
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteBCrypt\TesteBCrypt\obj\Debug\TesteBCrypt.csprojResolveAssemblyReference.cache
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteBCrypt\TesteBCrypt\obj\Debug\TesteBCrypt.exe
+c:\users\danilobn\documents\visual studio 2013\Projects\TesteBCrypt\TesteBCrypt\obj\Debug\TesteBCrypt.pdb
